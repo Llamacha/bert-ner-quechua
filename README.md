@@ -16,8 +16,6 @@ El modelo Ner quechua desarrollado utiliza el etiquetado en formato BIO
 - B-LOC, Comienzo del nombre de una locación justo después del nombre de otra locación.
 - I-LOC, Locación.
 
-Utilizamos la libreria Simple Transformers donde nos permitira desarrollar el modelo Ner, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
-
 ## Usabilidad
 Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo Ner, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
 
