@@ -16,6 +16,12 @@ El modelo Ner quechua desarrollado utiliza el etiquetado en formato BIO
 - B-LOC, Comienzo del nombre de una locación justo después del nombre de otra locación.
 - I-LOC, Locación.
 
+Ademas comparamos con distintos modelos pre entrenados para el fine tuning, en este caso el modelo Roberta y Bert que fue pre entrenado con solamente corpus del quechua sureño y los demas modelos Beto y bert multilingual como punto de referencia.
+
+|Task   | Roberta    | Bert | Beto uncased   | Multilingual BERT uncased                  |               
+|-------|--------------:|--------------:|--------------------------:|-------------------------------:|
+|[NER]  | 73.55      | 49.53        | 46.58                | 53.65                      |            
+
 ## Usabilidad
 Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo Ner, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
 
