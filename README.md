@@ -20,7 +20,7 @@ Ademas comparamos con distintos modelos pre entrenados para el fine tuning, en e
 
 |Task   | Roberta    | Bert | Beto uncased   | Multilingual BERT uncased                  |               
 |-------|--------------:|--------------:|--------------------------:|-------------------------------:|
-|[NER]  | 73.55      | 49.53        | 46.58                | 53.65                      |            
+|[NER]  | 82.21      | 49.53        | 46.58                | 53.65                      |            
 
 ## Usabilidad
 Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo Ner, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
