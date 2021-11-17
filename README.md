@@ -6,7 +6,7 @@ El dataset utilizado fue de la investigación
 [Cross-lingual Name Tagging and Linking for 282 Languages](https://aclanthology.org/P17-1178.pdf)
 y tambien hemos creado nuestro porpio dataset desarrollado manualmente.
 
-El modelo Ner quechua desarrollado utiliza el etiquetado en formato BIO
+El modelo Llama-NER utiliza el etiquetado en formato BIO
 - O, No es una entidad Nombrada.
 - B-PER, Comienzo del nombre de una persona justo después del nombre de otra persona.
 - B-PER, Comienzo del nombre de una persona justo después del nombre de otra persona.
