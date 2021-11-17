@@ -1,5 +1,5 @@
 # Llama-NER
-Es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. El modelo fue pre-entranado con [LlamaRoBERTa](https://github.com/Llamacha/LlamaRoBERTa) en la cual esta basado en RoBERTa.
+Es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. Se realizó el fine-tuning con [LlamaRoBERTa](https://github.com/Llamacha/LlamaRoBERTa) el cual es un modelo de lenguaje para el quechua sureño basado en RoBERTa.
 
 ## Acerca del modelo
 El dataset utilizado fue de la investigación 
@@ -29,8 +29,6 @@ Ademas comparamos con distintos modelos pre-entrenados para el fine-tuning. A co
 
 ## Usabilidad
 Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo NER, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
-
-Es este caso para importar el modelo ner entrenado , los archivos necesario lo adjunte en la carpeta `NerModel`.
 
 ```python
 from simpletransformers.ner import NERModel,NERArgs
