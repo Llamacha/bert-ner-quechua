@@ -9,7 +9,6 @@ y tambien hemos creado nuestro porpio dataset desarrollado manualmente.
 El modelo Llama-NER utiliza el etiquetado en formato BIO
 - O, No es una entidad Nombrada.
 - B-PER, Comienzo del nombre de una persona justo después del nombre de otra persona.
-- B-PER, Comienzo del nombre de una persona justo después del nombre de otra persona.
 - I-PER, Nombre de la persona.
 - B-ORG, Comienzo del nombre de una organización justo después del nombre de otra organización.
 - I-ORG, Organización.
