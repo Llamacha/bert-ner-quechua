@@ -1,5 +1,5 @@
 # Llama-NER
-Es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. El modelo fue pre-entranado con LlamaRoBERTa en la cual esta basado en RoBERTa.
+Es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. El modelo fue pre-entranado con [LlamaRoBERTa](https://github.com/Llamacha/LlamaRoBERTa) en la cual esta basado en RoBERTa.
 
 ## Acerca del modelo
 El dataset utilizado fue de la investigación 
