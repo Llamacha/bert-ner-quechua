@@ -1,5 +1,5 @@
-# NER_Quechua
-NER Quechua es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. El modelo Ner quechua fue pre entranado con bert-quechua en la cual esta basado en RoBERTa: A Robustly Optimized BERT Pretraining Approach.
+# Llama-NER
+Es un modelo entrenado especificamente para reconocer entidades en oraciones en el lenguaje quechua sureño. El modelo fue pre-entranado con LlamaRoBERTa en la cual esta basado en RoBERTa.
 
 ## Acerca del modelo
 El dataset utilizado fue de la investigación 
@@ -16,14 +16,24 @@ El modelo Ner quechua desarrollado utiliza el etiquetado en formato BIO
 - B-LOC, Comienzo del nombre de una locación justo después del nombre de otra locación.
 - I-LOC, Locación.
 
-Ademas comparamos con distintos modelos pre entrenados para el fine tuning, en este caso el modelo Roberta y Bert que fue pre entrenado con solamente corpus del quechua sureño y los demas modelos Beto y bert multilingual como punto de referencia.
+Ademas comparamos con distintos modelos pre-entrenados para el fine-tuning. A continuación mostramos los resultados:
 
-|Task   | Roberta    | Bert | Beto uncased   | Multilingual BERT uncased                  |               
-|-------|--------------:|--------------:|--------------------------:|-------------------------------:|
-|[NER]  | 82.21      | 49.53        | 46.58                | 53.65                      |            
+| Modelos   | Wikiann    | Llama-NER dataset |             
+|-------|--------------:|--------------:|
+| mBERT  | 53.65      | 54.72      | 
+|-------|--------------:|--------------:|
+| XML-RoBERTa  | 74.15      | 75.3        | 
+|-------|--------------:|--------------:|
+| MetaXL  | 77.06      | 77.85        |
+|-------|--------------:|--------------:|
+| MAD-X  | 87.10      | 79.63        | 
+|-------|--------------:|--------------:|
+| LlamaBERT  | -      | 49.53        | 
+|-------|--------------:|--------------:|
+| LlamaRoBERTa  | -      | 82.21        | 
 
 ## Usabilidad
-Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo Ner, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
+Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo NER, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
 
 Es este caso para importar el modelo ner entrenado , los archivos necesario lo adjunte en la carpeta `NerModel`.
 
@@ -31,7 +41,7 @@ Es este caso para importar el modelo ner entrenado , los archivos necesario lo a
 from simpletransformers.ner import NERModel,NERArgs
 
 model = NERModel(
-    "roberta", "./NerModel"
+    "roberta", "./Llama-NER"
 )
 ```
 Ahora inferimos las entidades.
