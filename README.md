@@ -18,19 +18,14 @@ El modelo Ner quechua desarrollado utiliza el etiquetado en formato BIO
 
 Ademas comparamos con distintos modelos pre-entrenados para el fine-tuning. A continuación mostramos los resultados:
 
-| Modelos   | Wikiann    | Llama-NER dataset |             
-|-------|--------------:|--------------:|
-| mBERT  | 53.65      | 54.72      | 
-|-------|--------------:|--------------:|
-| XML-RoBERTa  | 74.15      | 75.3        | 
-|-------|--------------:|--------------:|
+| Modelos | Wikiann | Llama-NER dataset |             
+|---------|:---------:|:-------------------:|
+| mBERT   | 53.65   | 54.72             | 
+| XML-RoBERTa  | 74.15      | 75.3      | 
 | MetaXL  | 77.06      | 77.85        |
-|-------|--------------:|--------------:|
-| MAD-X  | 87.10      | 79.63        | 
-|-------|--------------:|--------------:|
-| LlamaBERT  | -      | 49.53        | 
-|-------|--------------:|--------------:|
-| LlamaRoBERTa  | -      | 82.21        | 
+| MAD-X  | **87.10**      | 79.63        | 
+| LlamaBERT  |   -   | 49.53        | 
+| LlamaRoBERTa  |  -     | **82.21**        | 
 
 ## Usabilidad
 Utilizamos la libreria `Simple Transformers` donde nos permitira desarrollar el modelo NER, la documentacion se puede ver [aqui](https://simpletransformers.ai/docs/ner-model/).
